@@ -1,16 +1,6 @@
-import {
-  Observable,
-  debounceTime,
-  fromEvent,
-  map,
-  mergeAll,
-  mergeMap,
-  pluck,
-  switchMap,
-} from "rxjs";
+import { fromEvent, pluck, switchMap } from "rxjs";
 
 import { ajax } from "rxjs/ajax";
-import { GithubUserResp } from "../interfaces/github-user.interface";
 
 const body = document.querySelector("body");
 const textInput = document.createElement("input");
